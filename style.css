@@ -154,12 +154,14 @@ header {
 .explore {
   width: 100%;
   height: 100vh;
-  background-image: url("./img/bg2.png");
+  background-image: url("./img/explore.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding-top: 200px;
 }
 
 .explore-content {
@@ -176,14 +178,14 @@ header {
 }
 .explore-content .line {
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .explore-content p {
-  color: rgb(221, 221, 221);
+  color: #fff;
 }
 
 .explore-content .ctn {
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .tours {
   display: grid;
