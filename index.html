@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventure</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <h1 class="logo">ADVENTURE</h1>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#section_1">Tours</a></li>
+        <li><a href="#section_2">Explore</a></li>
+        <li><a href="#about-us">About</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+      <img src="./img/menu-btn.png" alt="" class="menu-btn" />
+    </nav>
+    <header>
+      <div class="header-content" id="home">
+        <h2>Adventure Awaits</h2>
+        <div class="line"></div>
+        <h1>DISCOVER NEW HORIZONS</h1>
+        <a href="#" class="ctn">Start Your Journey</a>
+      </div>
+    </header>
+
+    <!-- Events -->
+    <section class="events" id="section_1">
+      <div class="title">
+        <h1>UNFORGETTABLE EXPERIENCES</h1>
+        <div class="line"></div>
+      </div>
+      <div class="grid-container">
+        <div class="event">
+          <img src="./img/img1.png" alt="event image 1" />
+          <div class="event-details">
+            <h4>Everest Base Camp Trek</h4>
+            <p>
+              Join us on a breathtaking trek to Everest Base Camp. Experience
+              the beauty of the Himalayas and immerse yourself in the local
+              culture.
+            </p>
+            <a href="#" class="ctn">Details</a>
+          </div>
+        </div>
+        <div event>
+          <img src="./img/img2.png" alt="event image 2" />
+          <div class="event-details">
+            <h4>Alpine Walking Holidays</h4>
+            <p>
+              Explore the stunning alpine landscapes with our guided walking
+              holidays. Perfect for all skill levels and a great way to unwind
+              in nature.
+            </p>
+            <a href="#" class="ctn">More Info</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore" id="section_2">
+      <div class="explore-content">
+        <h1>EXPLORE THE WORLD</h1>
+        <div class="line"></div>
+        <p>
+          Discover the hidden gems of our planet. From bustling cities to serene
+          landscapes, there's a whole world waiting to be explored by you.
+        </p>
+        <a href="#" class="ctn">Discover More</a>
+      </div>
+    </section>
+
+    <section class="tours">
+      <div class="content-col">
+        <h1>EXCITING TOURS & DESTINATIONS</h1>
+        <div class="line"></div>
+        <p>
+          Our curated tours take you to extraordinary destinations. Whether it's
+          an adventure, culture, or relaxation you seek, we have something for
+          everyone.
+        </p>
+        <a href="#" class="ctn">View Tours</a>
+        <div class="gray-line"></div>
+      </div>
+      <div class="image-gallery">
+        <img src="./img/img3.png" alt="image" />
+        <img src="./img/img4.png" alt="image" />
+        <img src="./img/img5.png" alt="image" />
+        <img src="./img/img6.png" alt="image" />
+      </div>
+    </section>
+    <section class="about-us" id="about-us">
+      <div class="about-us-container">
+        <h1>ABOUT US</h1>
+        <div class="line"></div>
+        <div class="about-content">
+          <img
+            src="./img/about-image.jpeg"
+            alt="About Us Image"
+            class="about-img"
+          />
+          <div class="column">
+            <div class="about-text">
+              <h2>Discover Adventure</h2>
+              <p>
+                At Adventure, we believe in creating unforgettable experiences
+                that inspire and rejuvenate. Our team of travel experts is
+                passionate about crafting custom adventures that connect you
+                with the wonders of the world. Whether it's exploring remote
+                corners, immersing in different cultures, or finding tranquility
+                in nature, we're here to guide your journey.
+              </p>
+              <p>
+                Since our inception in 2010, we've been committed to responsible
+                tourism that respects local communities and the environment.
+                Join us in our mission to explore responsibly while creating
+                memories that last a lifetime.
+              </p>
+            </div>
+            <a href="#" class="ctn">Meet Our Team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer" id="footer">
+      <p class="first-line">Front-end Development Demo</p>
+      <p>Email:freedmores@gmail.com</p>
+      <p>Copyright &COPY; 2024</p>
+    </section>
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navLinks = document.querySelector(".nav-links");
+      menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>
