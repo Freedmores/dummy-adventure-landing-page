@@ -404,7 +404,7 @@ html {
   .explore {
     position: relative;
     width: 100%;
-    background-image: url("./img/bg2.png");
+    background-image: url("./img/explore.png");
     background-position: center;
     background-size: cover;
     align-items: center;
