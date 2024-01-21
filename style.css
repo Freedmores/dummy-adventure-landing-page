@@ -53,12 +53,18 @@ header {
   width: 100vw;
   min-width: 240px;
   height: 100vh;
-  background-image: url(./img/header-bg.png);
-  background-position: bottom;
-  background-size: cover;
+  background: #6c6c91;
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
+}
+.inner-header {
+  background-image: url(./img/header-bg.png);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  border-radius: 16px;
+  padding: 30px;
 }
 .header-content {
   margin-bottom: 150px;
@@ -187,6 +193,11 @@ header {
   padding: 40px;
   column-gap: 16px;
 }
+.tours .content-col {
+  background: #f0eded;
+  padding: 0 20px;
+  border-radius: 8px;
+}
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -212,7 +223,7 @@ header {
 
 .content-col h1 {
   color: #484872;
-  font-size: 7vmin;
+  font-size: 5vmin;
 }
 .content-col .line {
   margin-left: -1px;
@@ -229,8 +240,8 @@ header {
 
 /* General Styles */
 .about-us {
-  background-color: #f4f4f4;
   padding: 50px 0;
+  background: #c9c9d0;
 }
 
 /* Header Styles */
@@ -255,11 +266,11 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: #edebeb;
 }
 
 .about-img {
   max-width: 100%;
-  border-radius: 10px;
 }
 
 .about-text {
@@ -315,18 +326,36 @@ html {
   }
   .nav-links {
     flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    background: rgb(112, 112, 128);
+    width: 100vw;
+    justify-content: start;
+    background: #6c6c91;
     margin-top: -100vh;
     transition: all 0.5s ease;
   }
   .mobile-menu {
-    margin-top: 0px;
+    margin-top: 120px;
   }
   .nav-links li {
-    margin: 30px auto;
+    margin: 10px auto;
+  }
+  .inner-header {
+    margin-top: 70%;
+    width: 90vw;
+    height: 30vh;
+    margin-bottom: 40px;
+  }
+  header {
+    margin-bottom: 20px;
+  }
+  .header-content h1 {
+    font-size: 2.2rem;
+    margin-top: -6px;
+  }
+  .events {
+    margin-top: 20px;
+  }
+  .header-content h2 {
+    font-size: 1.5rem;
   }
 
   /* Events */
@@ -342,8 +371,11 @@ html {
     align-items: center;
     padding: 10px 10px;
   }
-  .event {
+  .events {
     margin-bottom: 30px;
+  }
+  .navbar {
+    margin-bottom: 20px;
   }
   .event img {
     max-width: 100%;
@@ -522,7 +554,7 @@ img:hover {
 
 li:hover {
   cursor: pointer;
-  border-bottom: #fc036b solid;
+  border-bottom: #f8f6f7 solid;
   color: white;
   font-weight: bold;
   border-radius: 6px;
